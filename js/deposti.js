@@ -43,7 +43,6 @@ document.getElementById('btn-deposit').addEventListener('click',function(){
 
     const totalCurrentBalance = currentTotalAmount  - totalCurrentWithdrow ;
     totalAmount.innerText = totalCurrentBalance;
-ow ;
     // clear withdrowal history
         // step -7
         withdrowField.value =' ';
