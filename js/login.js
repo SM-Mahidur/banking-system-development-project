@@ -9,8 +9,8 @@ document.getElementById('btn-submit').addEventListener('click',function(){
     const Password = UserPass.value;
     // step -4
 
-    if(Name === 'Md. Mahidur Rahman' && Password === 'bably12345') {
-        window.location.href='index.html';
+    if(Name === 'Md. Mahidur Rahman' && Password === '@M865125') {
+        window.location.href='bank.html';
     }
     else{
        alert("please required fullifill. Otherwise not login you.!");

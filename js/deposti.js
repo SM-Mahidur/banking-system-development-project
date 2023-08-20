@@ -21,25 +21,31 @@ document.getElementById('btn-deposit').addEventListener('click',function(){
 
     });
 
-// withdrow
+    // withdrow
+    // step -1 
     document.getElementById('btn-withdrow').addEventListener('click',function(){
+    // step -2
     const withdrowField =document.getElementById('withdrow-field');
     const withdrowAmounNew = parseFloat(withdrowField.value);
 
+    // step -3
     const withDrowTotalAmount = document.getElementById('withdrow-total');
     const withdrowPreviousAmount = parseFloat(withDrowTotalAmount.innerText);
-
+      
+    // step -4 
     const totalCurrentWithdrow= parseFloat(withdrowPreviousAmount + withdrowAmounNew);
-    withDrowTotalAmount.innerText=totalCurrentWithdrow ;
+    withDrowTotalAmount.innerText=totalCurrentWithdrow;
 
-
+    // step -5
     const totalAmount =document.getElementById('balanceAdd');
     const totalAmountPrevious = totalAmount.innerText;
     const currentTotalAmount =parseFloat( totalAmountPrevious)
 
     const totalCurrentBalance = currentTotalAmount  - totalCurrentWithdrow ;
     totalAmount.innerText = totalCurrentBalance;
+ow ;
     // clear withdrowal history
-    withdrowField.value =' ';
+        // step -7
+        withdrowField.value =' ';
     });
 
