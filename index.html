@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking System</title>
+</head>
+<body class="bg-lime-100">
+    
+
+    <!--  -->
+    
+    
+    <main class="mx-8 bg-cover">
+        <h1 class="text-3xl text-center pt-1 py-8 shadow bg-lime-50">Well Come to <span class="font-extrabold text-red-900">Bangking System </span> </h1>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p- text-white mt-12">
+            <div class="box bg-green-400 h-82 p-12 rounded-xl ">
+                <h3 class="text-3xl">Deposit</h3>
+                <h3  class="text-5xl">$ <span id="deposit-total">00</span></h3>
+            </div>
+            <div class="bg-sky-400 h-82 p-12 rounded-xl ">
+                <h3 class="text-3xl">Withdraw</h3>
+                <h3  class="text-5xl">$ <span id="withdrow-total">00</span></h3>
+            </div>
+            <div class="box bg-blue-300	 h-82 p-12 rounded-xl ">
+                <h3 class="text-3xl">Balance</h3>
+                <h3  class="text-5xl">$ <span id="balanceAdd">1250</span></h3>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 h-[250px] gap-4 p- mb-8 text-white mt-12">
+           <div class="box bg-indigo-300 h-[250px] p-12 rounded-xl ">
+                <h3 class="text-3xl">Please Deposit</h3>
+                <!-- input start -->
+                <input id="deposit-field" type="text" class="peer text-neutral-950	block min-h-[auto] w-full border-2 mt-4 rounded px-3  py-[0.52rem] leading-[1.6]"  placeholder="$ Amount you want to Deposit" />
+                <!-- input end -->
+                <!-- button start  -->
+                <button id="btn-deposit" class="mb-3 mt-4 h-[50px] inline-block w-[150px] rounded px-6 pb-2 pt-2.5 text-white-950 font-medium uppercase" type="button"  style="background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593); "> Deposite
+                 </button>
+                <!-- button end -->
+            </div>
+            <div class="bg-purple-300 h-[250px] p-12 rounded-xl ">
+                <h3 class="text-3xl">Please Withdraw</h3>
+                 <!-- input start -->
+                 <input type="text" id="withdrow-field" class="peer text-neutral-950 block min-h-[auto] w-full border-2 mt-4 rounded px-3  py-[0.52rem] leading-[1.6]"  placeholder="$ Amount you want to Withdraw" />
+                 <!-- input end -->
+                 <!-- button start  -->
+                 <button id="btn-withdrow" class="mb-3 text-white-950 mt-4 h-[50px] inline-block w-[150px] rounded px-6 pb-2 pt-2.5  font-medium uppercase" type="button"  style="background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593); "> Withdraw
+                  </button>
+                 <!-- button end -->
+            </div>
+        </div>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./js/deposti.js"></script>
+    <script>
+   
+    </script>
+</body>
+</html>
